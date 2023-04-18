@@ -7,6 +7,7 @@ public class Computadora {
     private Monitor monitor;
     private Teclado teclado;
     private Raton raton;
+    private Parlantes parlantes;
     private static int contadorComputadoras;
     
         //constructor vacio
@@ -15,12 +16,13 @@ public class Computadora {
         
     }
     //constructor2
-    public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton){
+    public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton, Parlantes parlantes){
         this();
         this.nombre = nombre;
         this.monitor = monitor;
         this.teclado = teclado;
         this.raton = raton;
+        this.parlantes = parlantes;
     }
 public int getidComputadora(){
     return idComputadora;
@@ -55,6 +57,14 @@ public int getidComputadora(){
 
     public void setRaton(Raton raton) {
         this.raton = raton;
+    }
+    
+    public Parlantes getParlantes() {
+        return parlantes;
+    }
+
+    public void setParlantes(Parlantes parlantes) {
+        this.parlantes = parlantes;
     }
     
 }
