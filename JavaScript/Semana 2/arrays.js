@@ -16,3 +16,14 @@ console.log(`Primer elemento del array: ${cars[0]}`)
 for(let i = 0; i < cars.length; i++) {
 console.log(`Elemento ${i+1}: ${cars[i]}`)
 }
+/* Modificar los elementos */
+cars[1] = 'Volvo'
+console.log(cars[1])
+
+// agregar nuevos valores al array con PUSH
+cars.push('Toyota')
+console.log(`cars: ${cars}`)
+
+// otro modo con lenght
+cars[cars.length] = 'Porche'
+console.log(cars)
