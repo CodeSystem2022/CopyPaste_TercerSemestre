@@ -39,3 +39,45 @@ person2.telephone = '549123456789'
 console.log(`person2.telephone: ${person2.telephone}`) // OUTPUT: 549123456789
 // recordar que JavaScript es case sensitive
 
+/* Acceder a la propiedad de un objeto */
+// Accediendo como si fuera un array, es el menos usado
+console.log(person['lastName']) // OUTPUT: Gomez
+// con for in
+for (property in person) {
+  console.log(property)
+  console.log(person[property])
+}
+// Se ven todas las KEY del objeto en el primer console
+// Se ven todoas los VALUES del objeto en el segundo console
+// OUTPUT:
+/*
+firstName
+Ana
+lastName
+Gomez
+email
+agomez@gmail.com
+age
+30
+completeName
+[Function: completeName]
+*/
+
+/* Agregar y eliminar propiedades de los Objetos */
+// Para MODIFICAR
+// Accedemos a la key mediante DOT NOTATION
+// Para no crear una nueva propiedad, usamos dot notation, luego del . el VSC muestra las opciones
+person.lastName = 'Perez' // cambiamos el valor del apellido
+console.log(`Modificando el lastName de person: ${person.lastName}`) // OUTPUT: Perez
+
+// Para AGREGAR
+person.secondName = 'Laura'
+console.log('Agregamos el atributo secondName a person')
+console.log(person)
+
+// Para ELIMINAR
+delete person.secondName
+// OJO con ESLint nos advierte:
+// 'Avoid the delete operator wich can impact perfonrmance'
+console.log('Eliminamos el atributo recién agregado')
+console.log(person)
