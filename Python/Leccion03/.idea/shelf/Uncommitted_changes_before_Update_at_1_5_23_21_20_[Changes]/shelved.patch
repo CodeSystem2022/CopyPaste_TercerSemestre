@@ -1,0 +1,346 @@
+Index: ../../JavaScript/Semana 4/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/vcs.xml b/../../JavaScript/Semana 4/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1682560017175)
++++ b/../../JavaScript/Semana 4/.idea/vcs.xml	(date 1682560017175)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1682571572041)
++++ b/.idea/.gitignore	(date 1682571572041)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../Archivos/.idea/Archivos.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/Archivos.iml b/../Archivos/.idea/Archivos.iml
+new file mode 100644
+--- /dev/null	(date 1682568797728)
++++ b/../Archivos/.idea/Archivos.iml	(date 1682568797728)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++    <option name="myDocStringFormat" value="Plain" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../../JavaScript/Semana 4/.idea/Semana 4.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/Semana 4.iml b/../../JavaScript/Semana 4/.idea/Semana 4.iml
+new file mode 100644
+--- /dev/null	(date 1682560017095)
++++ b/../../JavaScript/Semana 4/.idea/Semana 4.iml	(date 1682560017095)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../Archivos/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/modules.xml b/../Archivos/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1682568797740)
++++ b/../Archivos/.idea/modules.xml	(date 1682568797740)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Archivos.iml" filepath="$PROJECT_DIR$/.idea/Archivos.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Archivos/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/misc.xml b/../Archivos/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1682568797752)
++++ b/../Archivos/.idea/misc.xml	(date 1682568797752)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Programacion Python)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: ../Archivos/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/inspectionProfiles/profiles_settings.xml b/../Archivos/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1682568797768)
++++ b/../Archivos/.idea/inspectionProfiles/profiles_settings.xml	(date 1682568797768)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../Archivos/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/vcs.xml b/../Archivos/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1682568797780)
++++ b/../Archivos/.idea/vcs.xml	(date 1682568797780)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Archivos/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Archivos/.idea/.gitignore b/../Archivos/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1682568797912)
++++ b/../Archivos/.idea/.gitignore	(date 1682568797912)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../../JavaScript/Semana 4/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/inspectionProfiles/profiles_settings.xml b/../../JavaScript/Semana 4/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1682560017163)
++++ b/../../JavaScript/Semana 4/.idea/inspectionProfiles/profiles_settings.xml	(date 1682560017163)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../../JavaScript/Semana 4/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/misc.xml b/../../JavaScript/Semana 4/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1682560017135)
++++ b/../../JavaScript/Semana 4/.idea/misc.xml	(date 1682560017135)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Programacion Python)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: ../../JavaScript/Semana 4/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/modules.xml b/../../JavaScript/Semana 4/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1682560017119)
++++ b/../../JavaScript/Semana 4/.idea/modules.xml	(date 1682560017119)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Semana 4.iml" filepath="$PROJECT_DIR$/.idea/Semana 4.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/Leccion03.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Leccion03.iml b/.idea/Leccion03.iml
+new file mode 100644
+--- /dev/null	(date 1682573419314)
++++ b/.idea/Leccion03.iml	(date 1682573419314)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="Python 3.10 (Leccion03)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="GOOGLE" />
++    <option name="myDocStringFormat" value="Google" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../../JavaScript/Semana 4/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../JavaScript/Semana 4/.idea/.gitignore b/../../JavaScript/Semana 4/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1682560017371)
++++ b/../../JavaScript/Semana 4/.idea/.gitignore	(date 1682560017371)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1682571571925)
++++ b/.idea/modules.xml	(date 1682571571925)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Leccion03.iml" filepath="$PROJECT_DIR$/.idea/Leccion03.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1682573419318)
++++ b/.idea/misc.xml	(date 1682573419318)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Leccion03)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: catalogo_peliculas/test_catalogo_peliculas.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/catalogo_peliculas/test_catalogo_peliculas.py b/catalogo_peliculas/test_catalogo_peliculas.py
+new file mode 100644
+--- /dev/null	(date 1682575049238)
++++ b/catalogo_peliculas/test_catalogo_peliculas.py	(date 1682575049238)
+@@ -0,0 +1,26 @@
++from dominio.Pelicula import Pelicula
++from servicio.catalogo_peliculas import CatalogoPeliculas as cp
++
++opcion = None
++while opcion != 4:
++    try:
++        print('Opciones: ')
++        print('1. Agregar pelicula')
++        print('2. Listar las peliculas')
++        print('3. Eliminar catalogo de peliculas')
++        print('4. Salir')
++        opcion = int(input('Digite una opcion de menu (1-4):'))
++        if opcion ==1:
++            nombre_pelicula = input('Digite el nombre de la pelicula: ')
++            pelicula = Pelicula(nombre_pelicula)
++            cp.agregar_peliculas(pelicula)
++        elif opcion==2:
++            cp.listar_peliculas()
++        elif opcion == 3:
++            cp.eliminar_peliculas()
++    except Exception as e:
++        print(f'Ocurrio un error de tipo {e}')
++        opcion = None
++    else:
++        print('Salimos del programa')
++
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1682571571957)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1682571571957)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1682571571969)
++++ b/.idea/vcs.xml	(date 1682571571969)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
