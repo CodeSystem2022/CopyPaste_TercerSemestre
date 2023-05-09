@@ -81,3 +81,39 @@ delete person.secondName
 // 'Avoid the delete operator wich can impact perfonrmance'
 console.log('Eliminamos el atributo recién agregado')
 console.log(person)
+
+/* Distintas formas de imprimir un Objeto con: Object.values() y JSON.stringify() */
+
+console.log('* Distintas formas de imprimir un Objeto *')
+// La más sencilla: concatenar cada valor de la propiedad
+console.log(
+  `Concatenando cada valor de la propiedad: ${person.firstName} ${person.lastName}`
+) // OUTPUT: Carlos Gil
+
+// Por medio del ciclo for in
+for (nombrePropiedad in person) {
+  console.log(person[nombrePropiedad])
+}
+// OUTPUT:
+/*
+Ana
+Perez
+agomez@gmail.com
+30
+[Function: completeName]
+*/
+
+// Con Object.values()
+const personArray = Object.values(person)
+console.log(`Con Object.values() para ver los valores: ${personArray}`)
+// OUTPUT:
+/*
+Ana,Perez,agomez@gmail.com,30,function() { // metodo 
+    return `${this.firstName} ${this.lastName}`
+  }
+*/
+
+// Con JSON.stringify()
+console.log(`Con JSON.stringify(): ${JSON.stringify(person)}`)
+// PUTPUT: {"firstName":"Ana","lastName":"Perez","email":"agomez@gmail.com","age":30}
+
