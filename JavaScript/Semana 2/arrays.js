@@ -27,3 +27,12 @@ console.log(`cars: ${cars}`)
 // otro modo con lenght
 cars[cars.length] = 'Porche'
 console.log(cars)
+
+// Otra forma, NO USAR
+// autos[6] = 'Porche'
+
+/* Preguntar si es un array */
+console.log(Array.isArray(cars)) // devuelve boolean
+
+// Pregunta si la varaible es una instancia de la clase Array
+console.log(cars instanceof Array)
