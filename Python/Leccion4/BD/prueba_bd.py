@@ -1,5 +1,4 @@
 import psycopg2 #esto es para poder conectarnos a Postgres
-
 conexion = psycopg2.connect(
     user='postgres',
     password='4271369.',
