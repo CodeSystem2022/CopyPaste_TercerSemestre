@@ -14,9 +14,9 @@
   <h3> 🗂 Lenguajes del repositorio:</h3>
 	<br>
   <div align="center">
-	<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScrip" alt="JS" width="40" height="40">&nbsp;
-	<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-plain.svg" title="Java" alt="JAVA" width="40" height="40">&nbsp;
-	<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="PYTHON" width="40" height="40">&nbsp;
+	<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScrip" alt="JS" width="45" height="45">&nbsp;
+	<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-plain.svg" title="Java" alt="JAVA" width="45" height="45">&nbsp;
+	<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="PYTHON" width="45" height="45">&nbsp;
   <br>
   </div>
 </div>
@@ -36,54 +36,72 @@
 <table align="center">
 	<tr>
 		<th>SEMANA</th>
+		<th>FECHA</th>
 		<th>SCRUM MASTER</th>
 	</tr>
-	<tr>
-		<td>1°</td>
+	<tr align="center">
+		<td> 1°</td>
+		<td>03/04 al 07/04 </td>
 		<td>Britez Neira Leila</td>
 	</tr>
-	<tr>
-		<td>2°</td>
+	<tr align="center">
+		<td> 2°</td>
+		<td>10/04 al 14/04 </td>
 		<td>Solán Leonardo</td>
 	</tr>
-	<tr>
-		<td>3°</td>
+	<tr align="center">
+		<td> 3°</td>
+		<td>17/04 al 21/04 </td>
 		<td>Viola Jésica</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>4°</td>
+		<td>24/04 al 28/04 </td>
 		<td>Britez Neira Leila</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>5°</td>
+		<td>01/05 al 05/05 </td>
 		<td>Solán Leonardo</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>6°</td>
+		<td>08/05 al 12/05 </td>
 		<td>Viola Jésica</td>
 	</tr>
-		<tr>
+	<tr align="center">
 		<td>7°</td>
+		<td>15/05 al 19/05 </td>
 		<td>Britez Neira Leila</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>8°</td>
+		<td>22/05 al 26/05 </td>
 		<td>Solán Leonardo</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>9°</td>
+		<td>29/05 al 02/06 </td>
 		<td>Viola Jésica</td>
 	</tr>
-  	<tr>
+  	<tr align="center">
 		<td>10°</td>
+		<td>05/06 al 09/06 </td>
 		<td>Britez Neira Leila</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>11°</td>
+		<td>12/06 al 16/06 </td>
 		<td>Solán Leonardo</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>12°</td>
+		<td>19/06 al 23/05 </td>
 		<td>Viola Jésica</td>
+	</tr>
+	<tr align="center">
+		<td>13°</td>
+		<td>26/06 al 30/06 </td>
+		<td>Britez Neira Leila</td>
 	</tr>
 </table>
