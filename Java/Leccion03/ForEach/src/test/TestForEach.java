@@ -1,5 +1,7 @@
 package test;
 
+import domain.Persona;
+
 public class TestForEach {
 
     public static void main(String[] args) {
@@ -7,6 +9,11 @@ public class TestForEach {
         for (int edad: edades) { //sintaxis del ForEach
             System.out.println("edad = " + edad);
             
+        }
+        Persona personas[] = {new Persona ("Juan"), new Persona("Carla"), new Persona("Beatriz")};
+        //FOReACH
+        for(Persona persona: personas){
+            System.out.println("persona = " + persona);
         }
     }
 }
