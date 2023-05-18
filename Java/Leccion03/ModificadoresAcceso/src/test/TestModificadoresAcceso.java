@@ -6,7 +6,10 @@ public class TestModificadoresAcceso {
 
     public static void main(String[] args) {
         
-        //amiga aca arriba de esto, yo despues lo arreglo
+        Clase1 clase1 = new Clase1();
+        System.out.println("clase1 = " + clase1.atributoPublic);
+        clase1.metodoPublico();
+
          //clase3 claseHija=new Clase3();
          //System.out.println("claseHija = " + claseHija);
     }
