@@ -11,6 +11,4 @@ public class ClaseHija2 extends Clase2{
         
     }
 }
-// ClaseHija2 claseH2 = new ClaseHija2(); esto va en TestDefault abajo de psvm
-//claseH2.atributoDefault = "Cambio desde la prueba";
-//System.out.println("claseH2 atributo default = " + claseH2);
+
