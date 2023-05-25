@@ -5,6 +5,7 @@ conexion = bd.connect(
     host='127.0.0.1',
     port='5432',
     database='test_bd')
+
 try:
     conexion.autocommit= False # esto directament eno deberia estar, inicia la transaccion
     cursor = conexion.cursor()
@@ -22,4 +23,6 @@ try:
 except Exception as e:
     conexion.rollback()
     print(f'Ocurrio un error, se hizo un rollback: {e}')
-    
+
+finally:
+    conexion.close()
