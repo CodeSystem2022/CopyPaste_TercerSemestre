@@ -19,3 +19,7 @@ try:
 
 except Exception as e:
     print(f'Ocurrio un error, se hizo un rollback: {e}')
+    
+finally:
+    conexion.close()
+print('Termina la transaccion')
