@@ -1,7 +1,8 @@
 let x = 10; //variable de tipo primitiva
 console.log(x.length);
 console.log('Tipos primitivos');
-//*Objeto*/
+
+//* OBJETOS PARTE 2 */
 let persona = {
     nombre: 'Carlos',
     apellido: 'Gil',
@@ -22,10 +23,10 @@ let persona = {
     }
 }
 
-console.log('Nombre: '+persona.nombre);
-console.log('Apellido: '+persona.apellido);
-console.log('Su email es: '+persona.email);
-console.log('De la edad de '+persona.edad +' años');
+console.log('Nombre: ' + persona.nombre);
+console.log('Apellido: ' + persona.apellido);
+console.log('Su email es: ' + persona.email);
+console.log('De la edad de ' + persona.edad +' años');
 console.log(persona.nombreCompleto());
 console.log('Ejecutando con un objeto');
 
@@ -76,3 +77,6 @@ console.log(persona.nombreEdad);
 console.log('Comenzamos con el método get y set para idiomas');
 persona.lang = 'en';
 console.log(persona.lang);
+
+//** FUNCION CONSTRUCTORA **/
+// Las clases en JavaScript está basado en PROTOTIPOS. Los parámetros son los atributos del objeto y se pueden setear valores por default,
