@@ -1,7 +1,7 @@
 const x = 10 // variable de tipo primitivo
 console.log(x.length) // OUTPUT: undefined
 
-/* OBJETOS */
+//* OBJETOS */
 // Se crea un objeto en memoria, con una referencia(valor hexadecimal)
 const person = {
   firstName: 'Ana',
