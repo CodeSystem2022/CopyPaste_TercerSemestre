@@ -80,3 +80,97 @@ console.log(persona.lang);
 
 //** FUNCION CONSTRUCTORA **/
 // Las clases en JavaScript está basado en PROTOTIPOS. Los parámetros son los atributos del objeto y se pueden setear valores por default,
+function Person2(firstName, lastName, email) {
+  this.firstName = firstName
+  this.lastName = lastName
+  this.email = email
+  this.fullName = function () {
+    // funcion en el constructor
+    return `${firstName} ${this.lastName}`
+  }
+}
+
+// Creo un objeto utilizando el método constructor
+const father = new Person2('Leo', 'Lopez', 'lopezl@gmail.com')
+father.firstName = 'Leonardo' // le vuelvo a asignar otro valor en su atributo
+console.log('* * * * FUNCIÓN CONSTRUCTORA * * * *')
+console.log(father)
+// OUTPUT
+/*
+Person2 {
+  firstName: 'Leonardo',
+  lastName: 'Lopez',
+  email: 'lopezl@gmail.com'
+}
+*/
+console.log(father.fullName())
+// Creo otro objeto utilizando el método constructor
+const mother = new Person2('Laura', 'Contrera', 'contreral@gmail.com')
+console.log(mother)
+
+// CASO OBJETO
+const myObject = new Object() // Esta es una opción formal
+const myObject2 = {} // Esta opción es breve y recomendada
+
+// CASO STRING
+const myObject3 = 'Hola' // Esta es la sintaxis simplificada y recomendada
+console.log(typeof myObject3) // string
+
+// CASO NUMBER
+const myNumber = new Number(1) // no recomendable
+const myNumber2 = 2 // recomendada
+console.log(typeof myNumber2) // number, OJO number es de TIPO PRIMITIVO NO ES OBJETO
+
+// CASO BOOLEAN
+const myBoolean = new Boolean(false) // formal
+const myBoolean2 = false // recomendado
+console.log(typeof myBoolean2) // boolean, OJO bolean es de TIPO PRIMITIVO NO ES OBJETO
+
+// CASO ARRAY
+const myArray = new Array() // formal
+const myArray2 = [] // recomendada
+
+// CASO FUNCION
+//const myFunction = new Function(){} // notacion simplificada y recomendada
+
+/** PROTOTYPE ***/
+father.telephone = '541122334455'
+console.log(father)
+/*
+Person2 {
+  firstName: 'Leonardo',
+  lastName: 'Lopez',
+  email: 'lopezl@gmail.com',
+  fullName: [Function (anonymous)],
+  telephone: '541122334455'
+}
+*/
+// la propiedad(atributo) 'telephone' solo existe para el objeto father, no para el objeto mother
+
+// si queremos crear una propiedad que afecte a todos los objetos creados con Person2 usamos prototype
+Person2.prototype.telephone = '5491122223333'
+console.log(father)
+console.log(mother)
+
+/** CALL **/
+const persona4 = {
+  nombre: 'Juan',
+  apellido: 'Perez',
+  //nombreCompleto: function(titulo, telefono) {
+  nombreCompleto: function() {  
+    // return `${titulo}: ${this.nombre} ${this.apellido}, ${telefono} `
+    return `${this.nombre} ${this.apellido}`
+  }
+}
+
+const persona5 = {
+  nombre: 'Carlos',
+  apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto('Lic.', '5491144556677')) // OUTPUT: Lic.: Juan Perez, 5491144556677 
+console.log(persona4.nombreCompleto.call(persona5, 'Ing.', '5491111111111'))
+
+/** APPLY ***/
+// Permite mandar a llamar un metodo en un objeto que no tiene definido el metodo
+console.log(persona4.nombreCompleto.apply(persona5))
