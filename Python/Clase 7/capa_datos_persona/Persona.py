@@ -1,5 +1,5 @@
-class Persona
-    def __init__(selfself, id_persona, nombre, apellido, email):
+class Persona:
+    def __init__(self, id_persona, nombre, apellido, email):
         self._id_persona= id_persona
         self._nombre= nombre
         self._apellido=apellido
@@ -19,8 +19,8 @@ class Persona
         return self._id_persona
 
     @id_persona.setter
-    def id_persona(self, od_persona):
-        self._id_persona=id_persona
+    def id_persona(self, id_persona):
+        self._id_persona = id_persona
 
     @property
     def nombre(self):
