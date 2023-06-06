@@ -60,8 +60,44 @@ static saludar2(persona) {
 }
 }
 
-  //* CLASE HIJA/O: Empleado */
-//!Código de Jesi
+//* CLASE HIJA/O: Empleado */
+class Empleado extends Persona {
+    constructor(nombre, apellido, departamento) {
+    super(nombre, apellido)
+    this._departamento = departamento
+    }
+
+get departamento() {
+    return this._departamento
+    }
+
+set departamento(departamento) {
+    this._departamento = departamento
+    }
+
+// Sobreescritura -> modificar el comportamiento de la clase padre(Object)
+nombreCompleto() {
+    // Se aplica el polimorfismo
+    // El metodo que se ejecuta depende si es una referencia de la clase padre o hija
+    return super.nombreCompleto() + ', departamento: ' + this._departamento
+    }
+}
+
+// Instancio objetos de mi clase Persona
+let persona1 = new Persona('Martin', 'Lopez')
+let persona2 = new Persona('Martina', 'Lara')
+
+// Con el setter modifico los nombres
+persona1.nombre = 'Carlos'
+persona2.nombre = 'Maria Laura'
+
+// Con el setter modifico los apellidos
+persona1.apellido = 'Gomez'
+persona2.apellido = 'Costa'
+
+// Instancio un objeto de la clase empelado
+let empleado1 = new Empleado('María', 'Ramirez', 'ventas')
+console.log(empleado1);
+console.log(empleado1.nombreCompleto());
 
   //* Palabra static con métodos: Parte 1 y 2 */
-//!Código de Leo
