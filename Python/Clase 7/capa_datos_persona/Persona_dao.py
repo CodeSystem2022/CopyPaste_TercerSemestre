@@ -12,4 +12,14 @@ class PersonaDAO:
     _ACTUALIZAR = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
     _ELIMINAR = 'DELETE FROM persona WHERE id_persona=%s'
 
+#definimos lso metodos de lcase
+    @classmethod
+    def seleccionar(cls):
+        with Conexion.obtenerConexion()
+            with Conexion.obtenerCursor() as cursor:
+                cursor.execute(cls._SELECCIONAR)
+                registros = cursor.fetchall()
+                for registro in registros:
+                    persona = Persona(registro[0], registro[1], registro[2], registro[3])
+                    personas.append(persona)
 
