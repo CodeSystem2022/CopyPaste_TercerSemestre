@@ -1,3 +1,7 @@
+from capa_datos_persona.Persona import Persona
+from capa_datos_persona.conexion import Conexion
+
+
 class PersonaDAO:
     """
     DAO significa : Data Access Objets
