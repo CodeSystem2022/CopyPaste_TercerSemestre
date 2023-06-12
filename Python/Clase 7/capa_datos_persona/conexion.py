@@ -2,7 +2,6 @@ import psycopg2 as bd
 #psycopg2 as bd otra manera de importar el psycopg2
 from logger_base import log
 import sys
-
 class Conexion:
     _DATABASE = 'test_bd'
     _USERNAME = 'postgres'
@@ -11,7 +10,6 @@ class Conexion:
     _HOST = '127.0.0.1'
     _conexion = None
     _cursor = None
-
     @classmethod
     def obtenerConexion(cls):
         if cls._conexion is None:
@@ -27,10 +25,7 @@ class Conexion:
                 log.error(f'Ocurrio un error: {e}')
                 sys.exit()
         else:
-                return cls._conexion
-                
-@classmethod
-    def obtenerCursor(cls):
+            return cls._conexion
         if cls._cursor is None:
             try:
                 cls._cursor= cls.obtenerConexion().cursor()
@@ -40,7 +35,7 @@ class Conexion:
                 log.error(f'Ocurrio un error:{e}')
                 sys.exit()
         else:
-                return cls._cursor
-if _name=='main_':
+            return cls._cursor
+if __name__=='__main__':
     Conexion.obtenerConexion()
     Conexion.obtenerCursor()
