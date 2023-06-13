@@ -29,7 +29,7 @@ class Conexion:
         else:
                 return cls._conexion
                 
-@classmethod
+    @classmethod
     def obtenerCursor(cls):
         if cls._cursor is None:
             try:
@@ -41,6 +41,6 @@ class Conexion:
                 sys.exit()
         else:
                 return cls._cursor
-if _name=='main_':
+if __name__=='__main__':
     Conexion.obtenerConexion()
     Conexion.obtenerCursor()
