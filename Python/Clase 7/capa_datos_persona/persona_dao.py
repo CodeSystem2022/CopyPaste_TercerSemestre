@@ -49,9 +49,6 @@ class PersonaDAO:
                 log.debug(f'Persona actualizada: {persona}')
                 return cursor.rowcount
 
-
-
-
     #Insertar un registro
     #persona1= Persona(nombre='Pedro', apellido='Romero', email='promero@mail.com')
     #personas_insertadas = PersonaDAO.insertar(persona1)

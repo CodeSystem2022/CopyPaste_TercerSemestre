@@ -1,5 +1,5 @@
 import psycopg2 as bd
-#psycopg2 as bd otra manera de importar el psycopg2
+# psycopg2 as bd otra manera de importar el psycopg2
 from logger_base import log
 import sys
 
@@ -17,11 +17,7 @@ class Conexion:
     def obtenerConexion(cls):
         if cls._conexion is None:
             try:
-                cls._conexion = bd.connect(host=cls._HOST,
-                                          user=cls._USERNAME,
-                                          password=cls._PASSWORD,
-                                          port=cls._DB_PORT,
-                                          database=cls._DATABASE)
+                cls._conexion = bd.connect(host=cls._HOST, user=cls._USERNAME, password=cls._PASSWORD, port=cls._DB_PORT, database=cls._DATABASE)
                 log.debug(f'Conexion Exitosa: {cls._conexion}')
                 return cls._conexion
             except Exception as e:
