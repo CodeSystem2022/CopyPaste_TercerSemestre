@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>15</zoom_level><element><id>UMLClass</id><coordinates><x>45</x><y>0</y><w>240</w><h>225</h></coordinates><panel_attributes>Orden
+--
+-idOrden: number
+productos[]: Producto
+contadorProductosAgregados: number
+contadorOrdenes: number
+MAX PRODUCTOS: number = 5
+--
+Orden()
+agregarProducto(producto)
+calcularTotal(): number
+mostarOrden()
+--
+Responsibilities
+--Crear objetos Orden
+-- Administrar los productos de un orden</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>390</y><w>240</w><h>285</h></coordinates><panel_attributes>Producto
+--
+-idProducto: number
+nombre: string
+precio: number
+contadorProductos: number
+--
+Producto()
+getIdProducto(): number
+getIdNombre(): string
+getIdNombre(nombre)
+getIdPrecio(): number
+getIdPrecio(precio)
+toString(): string
+--
+Responsibilities
+-- Crear objetos de tipo Producto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>285</x><y>75</y><w>210</w><h>45</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>15</y><w>195</w><h>135</h></coordinates><panel_attributes>VentasTest
+--
+Esto no es una clase
+Es la prueba de creación
+de objetos Productos y Orden
+--
+Responsabilidades
+-- Ejecutar la prueba de
+    la aplicacion de Ventas</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>225</y><w>45</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>75</y><w>60</w><h>45</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>20;10;10;10</additional_attributes></element></diagram>
