@@ -1,6 +1,5 @@
 from psycopg2 import pool
-import psycopg2
-
+#import psycopg2
 # psycopg2 as bd otra manera de importar el psycopg2
 from logger_base import log
 import sys
@@ -37,12 +36,9 @@ class Conexion:
                                                       port = cls._DB_PORT,
                                                       database=cls._DATABASE)
                 log.debug(f'creacion del pool exitosa:{cls._pool}')
+                return cls._pool
             except Exception as e:
                 log.error(f'Ocurrio un error al obtener el pool: {e}')
                 sys.exit()
         else:
             return cls._pool
-
-if __name__ == '__main__':
-    conexion1 = Conexion.obtenerConexion()
-    conexion2 = Conexion.obtenerConexion()

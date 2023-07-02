@@ -182,3 +182,7 @@
 01:30:21 AM:DEBUG [conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x7f7941854a90; closed: 0>
 11:40:33 PM:DEBUG [conexion.py:24] Conexion Exitosa: <connection object at 0x7f1c5df4a0c0; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
 11:40:33 PM:DEBUG [conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x7f1c5df234c0; closed: 0>
+04:12:44 PM:DEBUG [conexion.py:38] creacion del pool exitosa:<psycopg2.pool.SimpleConnectionPool object at 0x7f14e6134fa0>
+04:14:41 PM:DEBUG [conexion.py:38] creacion del pool exitosa:<psycopg2.pool.SimpleConnectionPool object at 0x7f03331a6560>
+04:14:59 PM:DEBUG [conexion.py:38] creacion del pool exitosa:<psycopg2.pool.SimpleConnectionPool object at 0x7f7bae4aa560>
+04:16:34 PM:DEBUG [conexion.py:38] creacion del pool exitosa:<psycopg2.pool.SimpleConnectionPool object at 0x7f287e846560>
