@@ -11,7 +11,7 @@ import java.util.List;
 
 public class EstudianteDAO {
 //Método listar
-  public List<Estudiante> listarEstudiantes() {
+  public static List<Estudiante> listarEstudiantes() {
     List<Estudiante> estudiantes = new ArrayList<>();
         //Creamos algunos objetos que son necesarios para comunicarnos con la base de datos
     PreparedStatement ps; //Envía la sentencia a la base de datos
@@ -47,7 +47,7 @@ public class EstudianteDAO {
   }//Fin método listar
 
 //Método por id -> fin by id
-  public boolean buscarEstudiantePorId(Estudiante estudiante) {
+  public static boolean buscarEstudiantePorId(Estudiante estudiante) {
     PreparedStatement ps;
     ResultSet rs;
     Connection con = getConnection();
@@ -77,7 +77,7 @@ public class EstudianteDAO {
   } //Fin del método buscarEstudiantePorId
 
   //Método agregar un nuevo estudiante
-  public boolean agregarEstudiante(Estudiante estudiante) {
+  public static boolean agregarEstudiante(Estudiante estudiante) {
     PreparedStatement ps;
     Connection con = getConnection();
     String sql = "INSERT INTO estudiantes2022 (nombre, apeLlido, telefono, email) VALUES (?,?,?,?)";
@@ -103,7 +103,7 @@ public class EstudianteDAO {
   }//Fin método agregarEstudiante
 
   //Método para modificar estudiante
-  public boolean modificarEstudiante(Estudiante estudiante){
+  public static boolean modificarEstudiante(Estudiante estudiante){
     PreparedStatement ps;
     Connection con = getConnection();
     String sql = "UPDATE estudiantes2022 SET nombre=?, apellido=?, telefono=?, email=? WHERE idestudiantes2022=?";
@@ -128,7 +128,27 @@ public class EstudianteDAO {
     }//Fin finally
     return false;
   }//Fin método modificarEstudiante
-  
+  public static boolean eliminarEstudiante(Estudiante estudiante) {
+      PreparedStatement ps;
+      Connection con = getConnection();
+      String sql = "DELETE FROM estudiantes2022 WHERE idestudiantes2022=?";
+      try {
+          ps = con.prepareStatement(sql);
+          ps.setInt(1,estudiante.getIdEstudiante());
+          ps.execute();
+          return true;
+      } catch (Exception e) {
+          System.out.println("Error al eliminar estudiante: "+e.getMessage());
+      }
+      finally {
+          try {
+              con.close();
+          } catch (Exception e) {
+              System.out.println("Error al cerrar la conexión: "+e.getMessage());
+          }
+      }
+      return false;
+  }
   public static void main(String[] args) {
     var estudianteDao = new EstudianteDAO();
       //Modificar estudiante
@@ -144,15 +164,24 @@ public class EstudianteDAO {
     //var nuevoEstudiante = new Estudiante"Carlos", "Lara", "5495544223", "carlos@mail.com");
     //var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
     //if(agregado){
-    // System.out.println("Estudiante agreado: "+nuevoEstudiante);
+    // System.out.println("Estudiante agregado: "+nuevoEstudiante);
     //} else {
-    // System.out.println("No se ha agregado estudiante");
+    // System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
     //}
 
+    //Eliminar estudiante con id 3
+    //var estudianteEliminar = new Estudiante(3);
+    //var eliminado = estudianteDao.eliminarEstudiante(estudianteEliminar);
+    //if(eliminado)
+      //System.out.println("Estudiante eliminado: "+estudianteEliminar);
+    //else
+      //System.out.println("No se eliminó estudiante: "+estudianteEliminar);
+
+
     //Listar los estudiantes
-    //System.out.println("Listado de estudiantes: ");
-    //List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
-    //estudiantes.forEach(System.out::println);//Función lambda para imprimir
+    System.out.println("Listado de estudiantes: ");
+    List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+    estudiantes.forEach(System.out::println);//Función lambda para imprimir
 
     //Buscar por id
     //var estudiante1 = new Estudiante(1);
@@ -164,5 +193,4 @@ public class EstudianteDAO {
     // System.out.println("No se encontró el estudiante: "+estudiante1.getIdEstudiante());
     //}
   }
-  
 }  
